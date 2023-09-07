@@ -37,7 +37,7 @@ app.get("/api", (req, res) => {
   res.status(200).json({
     slack_name,
     current_day: days[new Date().getDay()],
-    utc_time: new Date().toISOString(),
+    utc_time: new Date().toISOString().slice(0,19) + 'Z',
     track,
     github_file_url:
       "https://github.com/akuya-ekorot/hngx-backend-stage-one/blob/main/index.js",
