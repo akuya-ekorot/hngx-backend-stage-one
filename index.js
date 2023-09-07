@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
     utc_time: new Date().toUTCString(),
     track,
     github_file_url:
-      "https://github.com/akuya-ekorot/hngx-backend-task-one/blob/main/",
+      "https://github.com/akuya-ekorot/hngx-backend-stage-one/blob/main/index.js",
     github_repo_url: "https://github.com/akuya-ekorot/hngx-backend-task-one",
     status_code: 200,
   });
