@@ -37,7 +37,8 @@ app.get("/", (req, res) => {
   res.status(200).json({
     slack_name,
     current_day: days[new Date().getDay()],
-    utc_time: new Date().toUTCString(),
+    // utc timestamp
+    current_time: new Date().toISOString(),
     track,
     github_file_url:
       "https://github.com/akuya-ekorot/hngx-backend-stage-one/blob/main/index.js",
